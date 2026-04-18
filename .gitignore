@@ -1,0 +1,4 @@
+tree_dataset/
+*.keras
+__pycache__/
+.venv/
