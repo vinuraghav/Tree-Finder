@@ -21,12 +21,12 @@ model.summary()
 prediciton_image = input_image()
 
 output = model.predict(prediciton_image)[0][0]
-
+print("\nOutput:\n")
 
 if output < 0.5:
-    print(f"Its a Banyan Tree!...{round(output, 4)}")
+    print(f"Its a Banyan Tree!...Value : {round(output, 4)}")
 elif output > 0.5:
-    print(f"Its a Neem Tree!..{round(output, 4)}")
+    print(f"Its a Neem Tree!...Value : {round(output, 4)}")
 
 
 
